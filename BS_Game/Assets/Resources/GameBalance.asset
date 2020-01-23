@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00baaf282e12f9644916112ef25b9584, type: 3}
+  m_Name: GameBalance
+  m_EditorClassIdentifier: 
+  CountMonsterSpawns: 2
+  SpawnTimer: 5
+  MaxMonstersOnScene: 2
+  Player:
+    MaxHP: 100
+    Speed: 12
+  Enemys:
+  - Image: {fileID: 1553092725505482483, guid: 806adc174511a374ab542c590f95fb9c, type: 3}
+    MaxHP: 100
+    Speed: 10
+    CountPoint: 5
+  - Image: {fileID: -6651511484458472446, guid: 806adc174511a374ab542c590f95fb9c,
+      type: 3}
+    MaxHP: 200
+    Speed: 8
+    CountPoint: 5
+  - Image: {fileID: -4239964407440688966, guid: 806adc174511a374ab542c590f95fb9c,
+      type: 3}
+    MaxHP: 300
+    Speed: 10
+    CountPoint: 6
+  - Image: {fileID: 4350148421137403599, guid: 806adc174511a374ab542c590f95fb9c, type: 3}
+    MaxHP: 1000
+    Speed: 5
+    CountPoint: 10
+  - Image: {fileID: 48468643636837845, guid: 806adc174511a374ab542c590f95fb9c, type: 3}
+    MaxHP: 300
+    Speed: 13
+    CountPoint: 3
+  - Image: {fileID: 6486988330587116607, guid: 806adc174511a374ab542c590f95fb9c, type: 3}
+    MaxHP: 350
+    Speed: 15
+    CountPoint: 3
+  Weapons:
+  - Type: 1
+    ImageWeapon: {fileID: 21300000, guid: 104f88416355be243ad6e709faa9fab9, type: 3}
+    Speed: 130
+    Damage: 50
+    IsDefault: 1
+    LifeTime: 2
+    AngleSinght: 1
+    NumberBullets: 1
+  - Type: 2
+    ImageWeapon: {fileID: 21300000, guid: e3fbf7f23cc7d574a9f03cfc7de203f1, type: 3}
+    Speed: 140
+    Damage: 30
+    IsDefault: 0
+    LifeTime: 2
+    AngleSinght: 4
+    NumberBullets: 3
+  - Type: 3
+    ImageWeapon: {fileID: 21300000, guid: be99a34f85f44a84bb143b43f02f719e, type: 3}
+    Speed: 150
+    Damage: 70
+    IsDefault: 0
+    LifeTime: 2
+    AngleSinght: 5
+    NumberBullets: 1
