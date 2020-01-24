@@ -148,7 +148,6 @@ namespace BSGame.Model
             }
             
             _gridAStar.CreateGrid();
-            Debug.Log("Перестройка АСтара");
         }
     }
 }
