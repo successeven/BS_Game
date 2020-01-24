@@ -12,8 +12,8 @@ namespace BSGame.Components
             var playerParams = GameBalance.Instance.Player;
             Model.CreateNewParams(
                 (UnitParam.Speed, playerParams.Speed),
-                (UnitParam.MaxHP, playerParams.MaxHP),
-                (UnitParam.CurrentHP, playerParams.MaxHP),
+                // (UnitParam.MaxHP, playerParams.MaxHP),
+                // (UnitParam.CurrentHP, playerParams.MaxHP),
                 (UnitParam.CountPoint, 0)
             ); //GameBalance.Instance.Player.DefaultSpeedAttack));
         }

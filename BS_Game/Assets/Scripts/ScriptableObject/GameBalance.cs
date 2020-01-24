@@ -29,7 +29,7 @@ namespace BSGame.ScriptableObject
     [Serializable]
     public class PlayerBalance
     {
-        public float MaxHP;
+        //public float MaxHP;
         public float Speed;
     }
 
