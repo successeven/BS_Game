@@ -131,14 +131,11 @@ namespace BSGame.Model.Projectiles
 
         public void OnUnitCollision(UnitView unit)
         {
-            unit.Model[UnitParam.CurrentHP] -= this[WeaponParam.Damage];
-            if (unit.Model[UnitParam.CurrentHP] > 0)
-                return;
+            unit.Model.TakeDamage(this[WeaponParam.Damage]);
 
             if (unit.Model.ContainsParam(EnemyParam.Points))
                 Owner[UnitParam.CountPoint] += unit.Model[EnemyParam.Points];
 
-            MainApp.Instance.GameModel.Monsters.DestroyUnit(unit.Model);
         }
 
         public void OnCollision(BaseBehaviour behaviour)

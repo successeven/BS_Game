@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using BSGame.Manager;
 using BSGame.Model;
 using BSGame.Model.AStar;
 using BSGame.Model.Units;
@@ -73,5 +74,6 @@ namespace BSGame.View
         {
             OnMyTriggerEnter2D?.Invoke(other);
         }
+
     }
 }

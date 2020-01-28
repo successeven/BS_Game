@@ -127,5 +127,16 @@ namespace BSGame.Model.Units
             _position = View.transform.localPosition;
             return this;
         }
+        
+        
+        public void TakeDamage(float damage)
+        {
+            this[UnitParam.CurrentHP] -= damage;
+            
+            if (this[UnitParam.CurrentHP] > 0)
+                return;
+            
+            MainApp.Instance.GameModel.Monsters.DestroyUnit(this);
+        }
     }
 }
